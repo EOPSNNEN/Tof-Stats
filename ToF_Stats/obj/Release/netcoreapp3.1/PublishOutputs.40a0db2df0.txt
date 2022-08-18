@@ -1,0 +1,5 @@
+C:\Users\Administrator\source\repos\ToF_Stats\ToF_Stats\bin\Release\netcoreapp3.1\publish\ToF_Stats.exe
+C:\Users\Administrator\source\repos\ToF_Stats\ToF_Stats\bin\Release\netcoreapp3.1\publish\ToF_Stats.dll
+C:\Users\Administrator\source\repos\ToF_Stats\ToF_Stats\bin\Release\netcoreapp3.1\publish\ToF_Stats.runtimeconfig.json
+C:\Users\Administrator\source\repos\ToF_Stats\ToF_Stats\bin\Release\netcoreapp3.1\publish\ToF_Stats.pdb
+C:\Users\Administrator\source\repos\ToF_Stats\ToF_Stats\bin\Release\netcoreapp3.1\publish\ToF_Stats.deps.json

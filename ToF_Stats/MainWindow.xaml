@@ -1,0 +1,60 @@
+﻿<Window x:Class="ToF_Stats.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToF_Stats"
+        mc:Ignorable="d"
+        Title="ToF calc v1.0" Height="450" Width="800"
+        WindowStyle="None"
+        ResizeMode="CanResize"
+        AllowsTransparency="True"
+        Mouse.MouseDown="Window_MouseDown"
+        Background="#548c7d">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="145*"/>
+            <ColumnDefinition Width="107*"/>
+            <ColumnDefinition Width="548*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="X" Background="Red" Grid.Column="2" HorizontalAlignment="Left" Margin="482,24,0,0" VerticalAlignment="Top" Click="Button_Click" RenderTransformOrigin="2.516,0.047" Height="26"/>
+        <TextBox x:Name="TextBox" materialDesign:HintAssist.Hint="Enter ur crit" HorizontalAlignment="Center" Margin="0,10,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="59" TextChanged="TextBox_TextChanged"/>
+        <Image HorizontalAlignment="Left" Height="356" Margin="143,97,0,0" VerticalAlignment="Top" Width="790" Source="/Kontora_Idiotov.png" Grid.ColumnSpan="3" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.429"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-2.993"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button Content="Count CR(%)" HorizontalAlignment="Left" Margin="1,128,0,0" VerticalAlignment="Top" Height="39" Width="139" Click="Button_CritRate"/>
+        <TextBox x:Name="Lv1" Style="{StaticResource MaterialDesignTextBox}" materialDesign:HintAssist.Hint="Enter ur lv" HorizontalAlignment="Center" Margin="0,69,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="59"/>
+
+        <Label Content="Your crit rate:" Grid.Column="1" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Width="87" RenderTransformOrigin="0.548,0.71" FontFamily="Impact"/>
+        <TextBox x:Name="Result" Grid.Column="1" HorizontalAlignment="Left" Margin="3,27,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" Height="56" TextChanged="TextBox_TextChanged_1" RenderTransformOrigin="0.622,0.381"/>
+        <Button Content="?" HorizontalAlignment="Left" Margin="10,408,0,0" VerticalAlignment="Top" Width="50" Click="Button_Click_2"/>
+        <Button Background="#8f1f62" Content="-" Grid.Column="2" HorizontalAlignment="Left" Margin="435,25,0,0" VerticalAlignment="Top" Width="42" Height="25" Click="Button_Minimize"/>
+        <TextBox x:Name="Resist" materialDesign:HintAssist.Hint="Enter ur resist" HorizontalAlignment="Left" Margin="10,8,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2" Height="61" TextChanged="Resis_TextChanged"/>
+        <TextBox x:Name="Lv2" materialDesign:HintAssist.Hint="Enter ur lvl" Grid.Column="2" HorizontalAlignment="Left" Margin="10,72,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="51"/>
+        <Label Content="Your resist:" Grid.Column="2" HorizontalAlignment="Left" Margin="154,8,0,0" VerticalAlignment="Top" FontFamily="Impact" RenderTransformOrigin="0.714,0.53"/>
+        <TextBox x:Name="Result2" Grid.Column="2" HorizontalAlignment="Left" Margin="148,36,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" Height="47" TextChanged="Result2_TextChanged"/>
+        <Button  Content="Count Resist(%)" Grid.Column="2" HorizontalAlignment="Left" Margin="1,128,0,0" VerticalAlignment="Top" Height="39" Width="139" Click="Button_Res"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="35,225,0,0" VerticalAlignment="Top" Width="147" Grid.ColumnSpan="2" Source="/grunge-arrow-2-1-1024x823.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="340,250,0,0" VerticalAlignment="Top" Width="147" Source="/grunge-arrow-2-1-1024x823.png" Grid.Column="2" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-164.041"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBox IsReadOnly="True" Grid.Column="2" HorizontalAlignment="Left" Margin="418,412,0,0" Text="k1n(板栗)#1566" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_2"/>
+        <Label Content="Creator: " Grid.Column="2" HorizontalAlignment="Left" Margin="365,416,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
