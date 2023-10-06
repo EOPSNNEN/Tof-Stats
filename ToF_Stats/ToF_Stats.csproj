@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="grunge-arrow-2-1-1024x823.png" />
     <None Remove="Kontora_Idiotov.png" />
   </ItemGroup>
 
@@ -21,8 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="grunge-arrow-2-1-1024x823.png" />
     <Resource Include="Kontora_Idiotov.png" />
+    <Resource Include="arrow.png" />
   </ItemGroup>
 
 </Project>

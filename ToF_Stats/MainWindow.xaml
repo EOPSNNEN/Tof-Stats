@@ -20,7 +20,7 @@
         </Grid.ColumnDefinitions>
         <Button Content="X" Background="Red" Grid.Column="2" HorizontalAlignment="Left" Margin="482,24,0,0" VerticalAlignment="Top" Click="Button_Click" RenderTransformOrigin="2.516,0.047" Height="26"/>
         <TextBox x:Name="TextBox" materialDesign:HintAssist.Hint="Enter ur crit" HorizontalAlignment="Center" Margin="0,10,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="59" TextChanged="TextBox_TextChanged"/>
-        <Image HorizontalAlignment="Left" Height="356" Margin="143,97,0,0" VerticalAlignment="Top" Width="790" Source="/Kontora_Idiotov.png" Grid.ColumnSpan="3" RenderTransformOrigin="0.5,0.5">
+        <Image HorizontalAlignment="Left" Height="350" Margin="10,0,0,0" VerticalAlignment="Center" Width="790" Source="/Kontora_Idiotov.png" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -42,19 +42,17 @@
         <Label Content="Your resist:" Grid.Column="2" HorizontalAlignment="Left" Margin="154,8,0,0" VerticalAlignment="Top" FontFamily="Impact" RenderTransformOrigin="0.714,0.53"/>
         <TextBox x:Name="Result2" Grid.Column="2" HorizontalAlignment="Left" Margin="148,36,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" Height="47" TextChanged="Result2_TextChanged"/>
         <Button  Content="Count Resist(%)" Grid.Column="2" HorizontalAlignment="Left" Margin="1,128,0,0" VerticalAlignment="Top" Height="39" Width="139" Click="Button_Res"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="35,225,0,0" VerticalAlignment="Top" Width="147" Grid.ColumnSpan="2" Source="/grunge-arrow-2-1-1024x823.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="340,250,0,0" VerticalAlignment="Top" Width="147" Source="/grunge-arrow-2-1-1024x823.png" Grid.Column="2" RenderTransformOrigin="0.5,0.5">
+        <Image Margin="10,172,36,59" Source="/arrow.png" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Image Margin="345,94,23,89" Source="/arrow.png" Stretch="Fill" Grid.Column="2" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="-164.041"/>
+                    <RotateTransform Angle="-178.574"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <TextBox IsReadOnly="True" Grid.Column="2" HorizontalAlignment="Left" Margin="418,412,0,0" Text="k1n(板栗)#1566" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_2"/>
-        <Label Content="Creator: " Grid.Column="2" HorizontalAlignment="Left" Margin="365,416,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
